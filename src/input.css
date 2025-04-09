@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'fonte';
+    src: url('DMSans-VariableFont_opsz,wght.ttf') format('truetype'), url('DMSans-VariableFont_opsz,wght.ttf') format('opentype');
+}
