@@ -10,3 +10,43 @@
 
     -- font-family: 'DM Sans', sans-serif;
 */
+
+main {
+    grid-template-areas: 
+    'create social social schedule'
+    'write manage maintain schedule'
+    'write faster growww growww'
+    ;
+}
+
+div#social {
+    grid-area: social;
+}
+
+div#manage {
+    grid-area: manage;
+}
+
+div#maintain {
+    grid-area: maintain;
+}
+
+div#schedule {
+    grid-area: schedule;
+}
+
+div#growww {
+    grid-area: growww;
+}
+
+div#faster {
+    grid-area: faster;
+}
+
+div#create {
+    grid-area: create;
+}
+
+div#write {
+    grid-area: write; 
+}
