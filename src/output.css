@@ -195,9 +195,6 @@
   .w-\[65\%\] {
     width: 65%;
   }
-  .w-\[70\%\] {
-    width: 70%;
-  }
   .w-\[95\%\] {
     width: 95%;
   }
@@ -224,12 +221,6 @@
   }
   .max-w-\[100\%\] {
     max-width: 100%;
-  }
-  .max-w-\[100\\\%\] {
-    max-width: 100\%;
-  }
-  .max-w-\[100\] {
-    max-width: 100;
   }
   .max-w-\[300px\] {
     max-width: 300px;
@@ -260,9 +251,6 @@
   }
   .gap-\[30px_0px\] {
     gap: 30px 0px;
-  }
-  .gap-\[30px_30px\] {
-    gap: 30px 30px;
   }
   .rounded-\[10px\] {
     border-radius: 10px;
@@ -309,6 +297,9 @@
   }
   .p-\[10px\] {
     padding: 10px;
+  }
+  .p-\[20px\/\] {
+    padding: 20px/;
   }
   .p-\[20px\] {
     padding: 20px;
@@ -447,14 +438,79 @@
       width: 50%;
     }
   }
+  .lg\:max-w-\[70\%\] {
+    @media (width >= 64rem) {
+      max-width: 70%;
+    }
+  }
+  .lg\:max-w-\[80\%\] {
+    @media (width >= 64rem) {
+      max-width: 80%;
+    }
+  }
   .lg\:max-w-\[100\%\] {
     @media (width >= 64rem) {
       max-width: 100%;
     }
   }
-  .lg\:min-w-\[100vh\] {
+  .lg\:max-w-\[100\] {
     @media (width >= 64rem) {
-      min-width: 100vh;
+      max-width: 100;
+    }
+  }
+  .lg\:grid-cols-1 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-\[\(300px_300px_300px_300px\)\] {
+    @media (width >= 64rem) {
+      grid-template-columns: (300px 300px 300px 300px);
+    }
+  }
+  .lg\:grid-cols-\[300px_20px_250px_300px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 300px 20px 250px 300px;
+    }
+  }
+  .lg\:grid-cols-\[300px_20px_300px_300px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 300px 20px 300px 300px;
+    }
+  }
+  .lg\:grid-cols-\[300px_25px_250px_300px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 300px 25px 250px 300px;
+    }
+  }
+  .lg\:grid-cols-\[300px_25px_300px_300px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 300px 25px 300px 300px;
+    }
+  }
+  .lg\:grid-cols-\[300px_230px_300px_300px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 300px 230px 300px 300px;
+    }
+  }
+  .lg\:grid-cols-\[300px_250px_300px_300px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 300px 250px 300px 300px;
+    }
+  }
+  .lg\:grid-cols-\[300px_300px_250px_300px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 300px 300px 250px 300px;
+    }
+  }
+  .lg\:grid-cols-\[300px_300px_300px_300px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 300px 300px 300px 300px;
+    }
+  }
+  .lg\:grid-cols-\[300px_350px_300px_300px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 300px 350px 300px 300px;
     }
   }
   .lg\:grid-cols-\[repeat\(4\,_300px\)\] {
@@ -462,14 +518,14 @@
       grid-template-columns: repeat(4, 300px);
     }
   }
-  .lg\:grid-rows-\[repeat\(3\,_300px\)\] {
+  .lg\:grid-cols-\[repeat\(300px_300px_300px_300px\)\] {
     @media (width >= 64rem) {
-      grid-template-rows: repeat(3, 300px);
+      grid-template-columns: repeat(300px 300px 300px 300px);
     }
   }
-  .lg\:grid-rows-\[repeat\(3\,_auto\)\] {
+  .lg\:grid-rows-\[300px_100px_100px_300px\] {
     @media (width >= 64rem) {
-      grid-template-rows: repeat(3, auto);
+      grid-template-rows: 300px 100px 100px 300px;
     }
   }
   .lg\:flex-row {
@@ -492,11 +548,6 @@
       gap: 30px 30px;
     }
   }
-  .lg\:p-\[20px\] {
-    @media (width >= 64rem) {
-      padding: 20px;
-    }
-  }
   .lg\:p-\[30px\] {
     @media (width >= 64rem) {
       padding: 30px;
@@ -517,14 +568,19 @@
       text-align: left;
     }
   }
-  .lg\:text-\[2em\] {
+  .lg\:text-\[20px\] {
     @media (width >= 64rem) {
-      font-size: 2em;
+      font-size: 20px;
     }
   }
-  .lg\:text-\[3em\] {
+  .lg\:text-\[25px\] {
     @media (width >= 64rem) {
-      font-size: 3em;
+      font-size: 25px;
+    }
+  }
+  .lg\:text-\[30px\] {
+    @media (width >= 64rem) {
+      font-size: 30px;
     }
   }
   .lg\:text-\[35px\] {
@@ -537,10 +593,24 @@
       font-size: 40px;
     }
   }
-  .lg\:leading-\[30px\] {
+  .lg\:text-\[50px\] {
     @media (width >= 64rem) {
-      --tw-leading: 30px;
-      line-height: 30px;
+      font-size: 50px;
+    }
+  }
+  .lg\:text-\[55px\] {
+    @media (width >= 64rem) {
+      font-size: 55px;
+    }
+  }
+  .lg\:text-\[60px\] {
+    @media (width >= 64rem) {
+      font-size: 60px;
+    }
+  }
+  .lg\:text-\[400px\] {
+    @media (width >= 64rem) {
+      font-size: 400px;
     }
   }
   .lg\:leading-\[35px\] {
@@ -549,21 +619,10 @@
       line-height: 35px;
     }
   }
-  .lg\:leading-\[50px\] {
-    @media (width >= 64rem) {
-      --tw-leading: 50px;
-      line-height: 50px;
-    }
-  }
-  .lg\:text-\[35\] {
-    @media (width >= 64rem) {
-      color: 35;
-    }
-  }
 }
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 main {
-  grid-template-areas: 'create social social schedule' 'write manage maintain schedule' 'write faster growww growww';
+  grid-template-areas: 'create social social schedule' 'create manage maintain schedule' 'write manage maintain schedule' 'write faster growww growww';
 }
 div#social {
   grid-area: social;
